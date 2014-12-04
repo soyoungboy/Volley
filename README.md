@@ -74,4 +74,9 @@ Volley源码分析：
         在android2.3及以后使用HttpURLConnection实现，
         至于原因，官方的解释是：在Eclair和Froyo上Apache HTTP client拥有更少的bug，更好的稳定性，
         在Gingerbread以及以后的版本中，HttpURLConnection是最好的选择，它简单的api以及轻量级非常适合Android。压缩和缓存机制降低了网路使用，提高了速度、节省了电量。
+Volley优化
+
+        https://www.zybuluo.com/flyouting/note/21391
+        
+        https://www.zybuluo.com/flyouting/note/22485
 
