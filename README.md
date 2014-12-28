@@ -55,7 +55,8 @@ Volley源码分析：
 代码中网络请求的实现由两种类型：
  一种是Java原生的HttpURLConnection实现（HurlStack），一种是Apache的HttpClient实现（HttpClientStack），Volley会在android2.3以前使用HttpClient实现，在android2.3及以后使用HttpURLConnection实现，至于原因，官方的解释是：在Eclair和Froyo上Apache HTTP client拥有更少的bug，更好的稳定性，在Gingerbread以及以后的版本中，HttpURLConnection是最好的选择，它简单的api以及轻量级非常适合Android。压缩和缓存机制降低了网路使用，提高了速度、节省了电量。
 Volley优化
-    [添加支持GZIP的网络请求；添加进度显示；关于HTTPS][1]
+
+[添加支持GZIP的网络请求；添加进度显示；关于HTTPS][1]
     
 [开放网络请求dispatcher线程数量；定义一个优化后的ImageLoader；添加一个返回字节数据的ImageRequest；给图片添加有效期；][2]
   [1]: https://www.zybuluo.com/flyouting/note/22485
